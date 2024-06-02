@@ -45,62 +45,36 @@
   }
 
   & hr {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 0 auto;
-    background: linear-gradient(
-      360deg,
-      #5a039e 2.67%,
-      #a60543 39.64%,
-      #ac0812 76.62%,
-      #db3c19 97.31%
-    );
-    border: none;
     position: relative;
+    border: none;
+    height: 5px;
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(219, 60, 25, 1) 2.67%,
+      rgba(172, 8, 18, 1) 39.64%,
+      rgba(166, 5, 67, 1) 76.62%,
+      rgba(90, 3, 158, 1) 97.31%
+    );
     overflow: visible;
+    border-radius: 5px;
 
-    &::before,
     &::after {
       content: "";
       position: absolute;
       top: 50%;
-      right: -149px;
-      transform: translateY(-50%);
-      height: 5px;
-      border-radius: 5px;
-      width: 133px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 56px;
+      height: 56px;
       background: linear-gradient(
-        273.24deg,
+        360deg,
         #5a039e 2.67%,
         #a60543 39.64%,
         #ac0812 76.62%,
         #db3c19 97.31%
       );
-
-      @media screen and (min-width: 768px) {
-        right: -339px;
-        width: 323px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        right: -665px;
-        width: 652px;
-      }
-    }
-
-    &::after {
-      right: auto;
-      left: -149px;
-      transform: rotate(180deg) translateY(50%);
-
-      @media screen and (min-width: 768px) {
-        left: -339px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        left: -665px;
-      }
+      border: 13px solid rgba(18, 18, 18, 1);
+      border-radius: 50%;
     }
   }
 
@@ -154,14 +128,7 @@
     display: block;
     width: 100%;
     padding: 8px;
-    background: linear-gradient(
-      90deg,
-      #db3c19 0%,
-      #a60543 25%,
-      #5a039e 50.14%,
-      #a60543 75%,
-      #db3c19 100%
-    );
+    background: linear-gradient(90deg, #db3c19 0%, #a60543 50%, #5a039e 100%);
 
     @media screen and (min-width: 1200px) {
       font-size: 24px;
@@ -210,11 +177,6 @@
     font-weight: 400;
     line-height: (19.6px/14px);
     display: block;
-
-    @media screen and (min-width: 1200px) {
-      font-style: normal;
-      text-decoration: underline;
-    }
   }
 
   & img {

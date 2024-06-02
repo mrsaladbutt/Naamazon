@@ -5,3 +5,58 @@
 .table-response {
   overflow: auto;
 }
+
+.second-masonry-list {
+  max-width: 328px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 708px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    max-width: 1320px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1360px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.second-masonry-cards {
+  width: 405px;
+  height: fit-content;
+  float: left;
+  margin-bottom: 25px;
+  transition: transform 0.2s;
+
+  @media screen and (min-width: 768px) {
+    width: 225px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc(1210px / 3);
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 430px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 443px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
