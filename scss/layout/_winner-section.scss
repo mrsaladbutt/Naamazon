@@ -1,12 +1,12 @@
 .winners-section {
   padding-top: 77px;
   padding-bottom: 90px;
-  background: url(../images/winners-section-bg-mobile.webp);
+  background: url(../images/icons/winners-section-mobile.svg);
   background-repeat: no-repeat;
   background-position: center top;
 
   @media screen and (min-width: 768px) {
-    background: url(../images/winners-section-bg-tablet.webp);
+    background: url(../images/icons/winners-section-tablet.svg);
     padding-top: 134px;
     padding-bottom: 54px;
     background-position: center 14px;
@@ -14,10 +14,10 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background: url(../images/winners-section-bg.webp);
-    background-position: center 14px;
+    background: url(../images/icons/winners-section-bg.svg);
+    background-position: center top;
     background-repeat: no-repeat;
-    padding-top: 110px;
+    padding-top: 85px;
     padding-bottom: 120px;
   }
   &__container {

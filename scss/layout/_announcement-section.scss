@@ -10,7 +10,11 @@
     padding-bottom: 120px;
   }
 
-  &::before {
+  & .section-wrapper {
+    position: relative;
+  }
+
+  & .section-wrapper::before {
     content: "";
     display: block;
     position: absolute;
@@ -32,19 +36,31 @@
 
     @media screen and (min-width: 1200px) {
       top: 80px;
-      left: 41px;
+      left: -300px;
       width: 319px;
       height: 214px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 80px;
+      left: -30px;
+      width: 319px;
+      height: 214px;
+    }
+
+    @media screen and (min-width: 1400px) {
+      top: 80px;
+      left: 23px;
     }
 
     @media screen and (min-width: 1600px) {
       width: 365px;
       height: 245px;
-      top: 60px;
-      left: 230px;
+      top: 63px;
+      left: -22px;
     }
   }
-  &::after {
+  & .section-wrapper::after {
     content: "";
     display: block;
     position: absolute;
@@ -67,16 +83,28 @@
 
     @media screen and (min-width: 1200px) {
       top: 80px;
-      right: 41px;
+      right: -300px;
       width: 319px;
       height: 214px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 80px;
+      right: -30px;
+      width: 319px;
+      height: 214px;
+    }
+
+    @media screen and (min-width: 1400px) {
+      top: 80px;
+      right: 23px;
     }
 
     @media screen and (min-width: 1600px) {
       width: 365px;
       height: 245px;
-      top: 60px;
-      right: 230px;
+      top: 63px;
+      right: -22px;
     }
   }
 
@@ -205,6 +233,14 @@
 
       &--visible {
         display: flex;
+      }
+
+      &.second-live {
+        left: -28px;
+
+        @media screen and (min-width: 1200px) {
+          left: -58px;
+        }
       }
 
       @media screen and (min-width: 1200px) {
