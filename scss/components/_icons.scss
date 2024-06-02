@@ -1,0 +1,14 @@
+.icon-broadcast-large {
+  fill: var(--color-default-light-10);
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.message-icon {
+  stroke: var(--color-default-light-10);
+}

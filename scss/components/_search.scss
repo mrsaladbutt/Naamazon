@@ -1,0 +1,118 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    gap: 15px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  &__form {
+    max-width: 220px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      max-width: 540px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1132px;
+    }
+    &__input {
+      width: 100%;
+      padding: 18px 16px;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      background-color: var(--color-default-dark-90);
+      height: 54px;
+      font-family: "Exo 2", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.3;
+      transition: border 0.2s;
+
+      &:focus {
+        border: 1px solid var(--color-primary-blue);
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding: 20px 40px;
+        height: 80px;
+        font-size: 24px;
+      }
+
+      &::placeholder {
+        font-family: "Exo 2", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.3;
+        color: var(--color-default-light-30);
+
+        @media screen and (min-width: 1200px) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__button {
+      font-family: "Exo 2", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.3;
+      width: 108px;
+      background: linear-gradient(
+        273.24deg,
+        #5a039e 2.67%,
+        #a60543 39.64%,
+        #ac0812 76.62%,
+        #db3c19 97.31%
+      );
+      color: var(--color-default-light-10);
+      height: 54px;
+
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      padding: 16px 12px;
+      transition: all 0.2s;
+
+      &:hover {
+        color: var(--color-primary-blue);
+      }
+
+      &:active {
+        color: var(--color-primary-pink);
+      }
+      @media screen and (min-width: 768px) {
+        width: 168px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        width: 228px;
+        height: 80px;
+        padding: 20px;
+      }
+    }
+  }
+}

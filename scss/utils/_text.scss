@@ -1,0 +1,103 @@
+.accent {
+  font-family: "Exo 2", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--color-primary-pink);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 64px;
+  }
+}
+
+.section-titles {
+  font-family: "Exo 2", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 64px;
+  }
+}
+
+.section-subtitles {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+}
+
+.accent-red {
+  color: var(--color-logo);
+}
+
+.accent-green {
+  color: var(--color-logo-alt);
+}
+
+.accent-blue {
+  color: var(--color-primary-blue);
+}
+
+.ok-emoji {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  width: 30px;
+  height: 33px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 64px;
+    width: 64px;
+    height: 70px;
+  }
+}
+
+.bat-emoji,
+.plane-emoji,
+.wizard-emoji {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.surprice-emoji,
+.zzz-emoji,
+.blow-emoji {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 7.96px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.like-emoji,
+.thumb-emoji,
+.sunglass-emoji {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}

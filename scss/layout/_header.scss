@@ -1,0 +1,33 @@
+.header {
+  padding: 36px 0;
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__socials {
+    display: none;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+
+    &__items {
+      height: 40px;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.12);
+      }
+    }
+  }
+}

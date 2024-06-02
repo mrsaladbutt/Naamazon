@@ -1,0 +1,122 @@
+.product-page-body {
+  background: var(--color-default-dark-100);
+
+  & .sale-section__article {
+    min-height: max-content;
+  }
+}
+
+.product-page-section {
+  padding-top: 4px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 20px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__list {
+    max-width: 328px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 708px;
+      margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1240px;
+      margin-bottom: 113px;
+    }
+
+    @media screen and (min-width: 1360px) {
+      max-width: 1320px;
+      margin-bottom: 113px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      max-width: 1360px;
+      margin-bottom: 113px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__cards {
+    width: 405px;
+    height: fit-content;
+    float: left;
+    margin-bottom: 25px;
+    transition: transform 0.2s;
+
+    @media screen and (min-width: 768px) {
+      width: 225px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: calc(1210px / 3);
+    }
+
+    @media screen and (min-width: 1360px) {
+      width: 430px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 443px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.masonry-height-1 img {
+  height: 372px;
+  max-height: 275px;
+
+  @media screen and (min-width: 640px) {
+    max-height: 188px;
+  }
+
+  @media screen and (min-width: 998px) {
+    max-height: 372px;
+  }
+}
+.masonry-height-2 img {
+  height: 286px;
+  max-height: 211px;
+
+  @media screen and (min-width: 640px) {
+    max-height: 145px;
+  }
+
+  @media screen and (min-width: 998px) {
+    max-height: 372px;
+  }
+}
+
+.masonry-height-3 img {
+  height: 190px;
+  max-height: 140px;
+
+  @media screen and (min-width: 640px) {
+    max-height: 96px;
+  }
+
+  @media screen and (min-width: 998px) {
+    max-height: 372px;
+  }
+}

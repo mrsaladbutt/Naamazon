@@ -1,0 +1,75 @@
+.nav__socials__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 28px;
+  right: 8px;
+  padding: 8px;
+  border-radius: 100px;
+  max-width: 396px;
+  background: transparent;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    right: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  &.show-links {
+    background: linear-gradient(
+      270deg,
+      rgba(37, 0, 60, 0.7) 0%,
+      rgba(57, 0, 22, 0.7) 33%,
+      rgba(58, 0, 5, 0.7) 66%,
+      rgba(70, 15, 3, 0.7) 100%
+    );
+
+    & .nav__socials__dropdown {
+      display: flex;
+    }
+  }
+}
+
+.nav__socials__dropdown {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+
+  &__items {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__links {
+    width: 50px;
+    height: 50px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background: linear-gradient(
+    273.24deg,
+    #5a039e 2.67%,
+    #a60543 39.64%,
+    #ac0812 76.62%,
+    #db3c19 97.31%
+  );
+  border-radius: 24px;
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,77 @@
+.hero-section {
+  padding-top: 11px;
+  position: relative;
+  padding-bottom: 210px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+    padding-bottom: 183px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 331px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 194px;
+
+    @media screen and (min-width: 768px) {
+      gap: 203px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 90px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 328px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 80px;
+      line-height: 1.1;
+      max-width: 745px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 68px;
+    right: -46px;
+    width: 439px;
+    height: 328px;
+
+    background: url("/images/hero-section-image.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+      right: 48px;
+      width: 617px;
+      height: 460px;
+      top: 3px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      right: -160px;
+      width: 773px;
+      height: 580px;
+      top: -60px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      right: 80px;
+    }
+  }
+}

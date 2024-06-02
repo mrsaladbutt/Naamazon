@@ -1,0 +1,81 @@
+body {
+  background: url("/images/mobile-bg.webp"), var(--color-default-dark-100);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-default-light-10);
+  font-weight: 400;
+  font-family: "Exo 2", sans-serif;
+  margin: 0;
+  height: 100%;
+
+  @media screen and (min-width: 768px) {
+    background: url("/images/tablet-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background: url("/images/desktop-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: clip;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.main {
+  flex: 1 1 auto;
+}

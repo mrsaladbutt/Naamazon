@@ -1,0 +1,230 @@
+.announcement-section {
+  padding-bottom: 123px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 220px;
+    left: -44px;
+    width: 216px;
+    height: 145px;
+    background: url(/images/icons/megaphone-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -2;
+
+    @media screen and (min-width: 768px) {
+      top: 15px;
+      left: 10px;
+      width: 203px;
+      height: 136.24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 80px;
+      left: 41px;
+      width: 319px;
+      height: 214px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: 365px;
+      height: 245px;
+      top: 60px;
+      left: 230px;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -125px;
+    right: -44px;
+    width: 216px;
+    height: 145px;
+    background: url(/images/icons/megaphone-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(-1);
+    z-index: -2;
+
+    @media screen and (min-width: 768px) {
+      top: 15px;
+      right: 10px;
+      width: 203px;
+      height: 136.24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 80px;
+      right: 41px;
+      width: 319px;
+      height: 214px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: 365px;
+      height: 245px;
+      top: 60px;
+      right: 230px;
+    }
+  }
+
+  &__container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-height: 189px;
+    text-align: center;
+    gap: 20px;
+    font-family: "Exo 2", sans-serif;
+
+    &--visible {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-height: 373px;
+      gap: 40px;
+    }
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+
+    @media screen and (min-width: 1200px) {
+      gap: 20px;
+    }
+  }
+
+  &__description {
+    display: none;
+    gap: 4px;
+    align-self: flex-start;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 15px;
+    }
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: left;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__description-mobile {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-self: center;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    &__button {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-default-dark-100);
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.3;
+      width: 328px;
+      min-height: 54px;
+      border-radius: 50px;
+      padding: 12px 8px;
+      box-shadow: 4px 4px 0px 0px #ec407a, -4px -4px 0px 0px #81d4fa;
+      cursor: pointer;
+      transition: color 0.2s, background-color 0.2s;
+
+      &:hover {
+        background-color: var(--color-primary-blue);
+        color: var(--color-primary-pink);
+      }
+      @media screen and (min-width: 1200px) {
+        gap: 10px;
+        font-size: 20px;
+        width: 530px;
+        min-height: 80px;
+        border-radius: 100px;
+        padding: 25px 20px;
+        box-shadow: 2px 2px 0px 0px #ec407a, -2px -2px 0px 0px #81d4fa;
+      }
+    }
+
+    &__live {
+      position: absolute;
+      top: -8px;
+      left: 0;
+      display: none;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      padding: 2px 6px;
+      border-radius: 5px;
+      background-color: var(--color-logo);
+
+      &--visible {
+        display: flex;
+      }
+
+      @media screen and (min-width: 1200px) {
+        top: -15px;
+        left: -20px;
+        gap: 10px;
+        padding: 6px 14px;
+        border-radius: 9px;
+      }
+
+      &__span {
+        font-family: "Exo 2", sans-serif;
+        font-size: 14.16px;
+        font-weight: 500;
+        line-height: 1.3;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
