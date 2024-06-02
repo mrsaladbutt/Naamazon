@@ -2,20 +2,22 @@
 @import "./utils/text";
 @import "./base";
 @import "./utils/utils";
-@import "./layout/wrapper";
+
+@import "./layout/announcement-section";
 @import "./layout/container";
+@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/hero-section";
-@import "./layout/announcement-section";
-@import "./layout/sale-section";
-@import "./layout/winner-section";
-@import "./layout/socials-section";
-@import "./layout/footer";
+@import "./layout/modal";
 @import "./layout/product-page";
+@import "./layout/sale-section";
+@import "./layout/socials-section";
 @import "./layout/typography";
+@import "./layout/winner-section";
+@import "./layout/wrapper";
 
 @import "./components/icons";
-@import "./components/search";
+@import "./components/loading";
 @import "./components/logo";
 @import "./components/nav-dropdown";
-@import "./components/loading";
+@import "./components/search";
