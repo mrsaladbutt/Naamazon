@@ -6,3 +6,11 @@ var msnry = new Masonry(elem, {
   gutter: 15,
   horizontalOrder: true,
 });
+
+var elemSecond = document.querySelector(".second-masonry-list");
+var msnrySecond = new Masonry(elemSecond, {
+  itemSelector: ".second-masonry-cards",
+  columnWidth: ".second-masonry-cards",
+  gutter: 15,
+  horizontalOrder: true,
+});
